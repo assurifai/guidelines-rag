@@ -7,8 +7,8 @@ import openai
 from lancedb.embeddings import get_registry
 from lancedb.pydantic import LanceModel, Vector
 from lancedb.table import Table
-from unstructured.chunking.basic import chunk_elements
-from unstructured.partition.pdf import partition_pdf
+# from unstructured.chunking.basic import chunk_elements
+# from unstructured.partition.pdf import partition_pdf
 
 db = lancedb.connect("db")
 func = get_registry().get("openai").create(name="text-embedding-3-small")
@@ -29,14 +29,14 @@ def get_table() -> Table:
     return tbl
 
 
-def extract_text_from_pdf(pdf_path) -> list[dict]:
-    elements = partition_pdf(filename=pdf_path, chunking_strategy="by_title")
-    elements[0].metadata.page_number
-    return [
-        {"text": element.text, "pg_numb": element.metadata.page_number}
-        for element in elements
-        if element.text.strip()
-    ]
+# def extract_text_from_pdf(pdf_path) -> list[dict]:
+#     elements = partition_pdf(filename=pdf_path, chunking_strategy="by_title")
+#     elements[0].metadata.page_number
+#     return [
+#         {"text": element.text, "pg_numb": element.metadata.page_number}
+#         for element in elements
+#         if element.text.strip()
+#     ]
 
 
 # extracted = extract_text_from_pdf("Selling-Guide_02-05-25_highlighted.pdf")
