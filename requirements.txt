@@ -1,0 +1,5 @@
+unstructured
+unstructured[pdf]
+openai 
+lancedb
+streamlit
