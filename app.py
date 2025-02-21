@@ -1,6 +1,5 @@
 import openai
 import streamlit as st
-from unstructured.partition.pdf import partition_pdf
 
 from ingest import Embs, get_table
 
