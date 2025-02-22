@@ -3,3 +3,4 @@ unstructured[pdf]
 openai 
 lancedb
 streamlit
+streamlit-pdf-viewer
