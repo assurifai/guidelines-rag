@@ -107,5 +107,5 @@ with chat:
 with pdf:
     pdf_viewer(
         "Selling-Guide_02-05-25_highlighted.pdf",
-        pages_to_render=[st.session_state.page_to_render],
+        scroll_to_page=st.session_state.page_to_render,
     )
