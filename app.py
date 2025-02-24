@@ -26,7 +26,7 @@ if "page_to_render" not in st.session_state:
 
 chat, pdf = st.columns([1, 1])
 with chat:
-    with st.container(height=1000):
+    with st.container(height=700):
         # Chat Input
         user_input = st.chat_input("Ask me anything...")
         for chat_item in st.session_state.chat_history:
@@ -108,4 +108,5 @@ with pdf:
     pdf_viewer(
         "Selling-Guide_02-05-25_highlighted.pdf",
         scroll_to_page=st.session_state.page_to_render,
+        height=700,
     )
