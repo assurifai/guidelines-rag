@@ -3,4 +3,4 @@ unstructured[pdf]
 openai 
 lancedb
 streamlit
-streamlit-pdf-viewer
+streamlit-pdf-viewer==0.0.18
