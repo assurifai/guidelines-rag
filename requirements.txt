@@ -6,3 +6,4 @@ streamlit
 streamlit-pdf-viewer==0.0.18
 fastapi
 uvicorn
+python-dotenv

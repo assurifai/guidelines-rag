@@ -1,8 +1,11 @@
 import openai
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
 from ingest import Embs, get_table
+
+load_dotenv()
 
 # Load the table for embedding search
 tbl = get_table()
